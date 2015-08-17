@@ -1,3 +1,21 @@
-<h2 id="title">Welcome to Ember</h2>
-
-{{outlet}}
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">MooInvoicing</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+            		{{#linkTo "index" tagName="li"}}<a href="#">Home</a>{{/linkTo}}
+            		{{#linkTo "clients" tagName="li"}}<a href="#">Clients</a>{{/linkTo}}
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            {{outlet}}
+        </div>
+    </div>
+</div>
+	
